@@ -1,0 +1,124 @@
+html, body {
+    height: 100vh;
+}
+
+body {
+    background-color: #D9D9D9;
+    font-family: Lato, sans-serif;
+}
+
+main {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    background-color: #357366;
+    width: 200px;
+    height: 200px;
+    background-color: #BDD9BF;
+}
+
+header {
+    background-color: #BDD9BF;
+}
+
+.main-menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    background-color: #D9D9D9;
+}
+
+.main-menu li {
+    list-style-type: none;
+}
+
+.main-menu li a {
+    text-decoration: none;
+    font-family: Lato, sans-serif;
+    color: #0E3B43;
+}
+
+h3 {
+    text-align: center;
+    font-size: x-large;
+    font-family: Lato, sans-serif;
+}
+
+input {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#name {
+    width: 500px;
+    height: 30px;
+    border-radius: 2px;
+}
+
+#email {
+    width: 500px;
+    height: 30px;
+    border-radius: 2px;
+}
+
+#enquiry {
+    width: 500px;
+    height: 300px;
+    border-radius: 2px;
+}
+
+#enquiry::placeholder{
+    position: absolute;
+    top: 0;
+    left: 3px;
+    font-family: Lato, sans-serif;
+}
+
+#enquiry input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid;
+}
+
+.send-btn {
+    width: 40px;
+    padding-right: 40px;
+    background-color: grey;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 9px;
+    margin-top: 10px;
+    position: relative;
+    left: 195px;
+}
+
+.consent {
+    font-size: 12px;
+    font-style: italic;
+    color:#0E3B43;
+}
+
+.response {
+    display: none;
+    color: #0e3b43;
+}
+
+footer {
+    position: relative;
+    background-color: #0E3B43;
+    color: white;
+    padding: 10px;
+    font-style: italic;
+    width: 100%;
+    flex-shrink: 0;
+    left: 0;
+    top: 20px;
+}

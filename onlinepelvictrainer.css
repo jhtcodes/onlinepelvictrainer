@@ -1,0 +1,303 @@
+html, body {
+    height: 100vh;
+}
+
+body {
+    background-color: #d9d9d9;
+    font-family: Lato, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin: 0;
+}
+
+header, main, footer {
+    flex: 1 0 auto;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    background-color: #BDD9BF;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    background: #BDD9BF;
+    width: 100%;
+}
+
+.slogan-container {
+    background: #BDD9BF;
+    font-size: small;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    border: 10px solid #BDD9BF;
+}
+
+.slogan {
+    background-color: white;
+    padding: 5px;
+    border: #0E3B43 5px solid;
+    border-radius: 10px;
+    width: 90%;
+}
+
+.main-menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+}
+
+.main-menu li a{
+    text-decoration: none;
+    color:#0E3B43;
+    font-size: medium;
+}
+
+.end-function-modal {
+    background: #BDD9BF;
+    width: 50%;
+    max-height: 150px;
+    border: 4px solid #0E3B43;
+    border-radius: 5px;
+    position: absolute;
+    left: 25%;
+    z-index: 10;
+    padding: 20px;
+    display: none;
+    padding-right: 50px;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.close-btn {
+    color: white;
+    background-color: #C66547;
+    border-radius: 10px;
+}
+
+.next-message {
+    font-weight: bolder;
+    text-align: center;
+}
+
+.close-refresh {
+    font-size: xx-small;
+}
+
+.timer-app {
+    margin-top: 3rem;
+    width: 100%;
+    background-color: white;
+    height: 150px;
+}
+
+.seconds-display {
+    position: absolute;
+    z-index: 4;
+}
+
+.timer-bar {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #357366;
+    position: relative;
+    z-index: 2;
+    top: 50px;
+}
+
+.timer-bar-progress {
+    background-color:#C66547;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.start-button {
+    background-color: #BDD9BF;
+    color: #0E3B43;
+    font-weight: bold;
+    font-size: larger;
+    text-transform: uppercase;
+    border-radius: 7px;
+}
+
+.start-button:hover {
+    background-color: #C66547;
+    color: white;
+}
+
+
+.squeeze-btn {
+    background-color: #C66547;
+    color: white;
+}
+
+.relax-btn {
+    background-color:#357366;
+    color: white;
+}
+.repetitions-btn {
+    background-color: #0E3B43;
+    color: white;
+}
+
+.set-timer {
+    padding-top: 1rem;
+    display: inline-block;
+    padding-bottom: 20px;
+}
+
+input {
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+.set-timer button {
+    text-align: center;
+    border-radius: 5px;
+}
+
+ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+li {
+    font-size: 14px;
+}
+input:focus {
+    background-color:#d9d9d9;
+}
+
+.reminder {
+    background-color: white;
+    padding: 5px 10px 10px 10px;
+    font-size: 12px;
+    font-style: italic;
+    border: 5px solid #0E3B43;
+
+}
+
+.small-icon {
+    height: 20px;
+    width: 30px;
+}
+
+.small-bookmark {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    background-color: white;
+    border:#0E3B43 solid 1px;
+    position: relative;
+    left: 10px;
+    bottom: 10%;
+    border-radius: 6px;
+    z-index: 3;
+}
+
+.small-bookmark:hover {
+    background-color: #C66547;
+}
+
+.bookmark-container {
+    width: 150px;
+    height: 130px;
+    position: absolute;
+    left: 75%;
+}
+
+.bookmark-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.bookmark-content {
+    width: 100%;
+    display: none;
+    background-color: #C66547;
+    border: 2px solid #0E3B43;
+    font-size: smaller;
+    position: absolute;
+    z-index: 10;
+    right: 60%;
+    bottom: 30%;
+}
+
+.how-to-use {
+    background-color: white;
+    margin: 2px;
+}
+
+h6 {
+    font-size: medium;
+}
+
+.how-to-use p {
+    font-size: small;
+}
+
+footer {
+    position: relative;
+    background-color: #0E3B43;
+    color: white;
+    padding: 10px;
+    font-style: italic;
+    width: 100%;
+    flex-shrink: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    .bookmark-container {
+        display: none;
+    }
+
+    .lists {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media (min-width: 960px) {
+    
+    .reminder {
+        padding: 5px 10px 5px 10px;
+        background-color: #0E3B43;
+        border: 3px solid white;
+        color: white;
+    }
+}

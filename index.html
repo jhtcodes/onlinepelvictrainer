@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Pelvic Trainer</title>
+    <link rel="stylesheet" href="./onlinepelvictrainer.css">
+    <script defer src="./onlinepelvictrainer.js"></script>
+</head>
+<body>
+    <section class="overlay"></section>
+    <header>
+        <img class="logo" src="./logo-short.png" alt="logo">
+        <section class="slogan-container">
+            <p class="slogan">Created by a pelvic floor physiotherapist, this free-to-use online timer is designed to empower you complete your pelvic floor exercises on a daily basis!</p>
+        </section>
+    </header>
+    <main>
+        <nav class="main-menu">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./pelvicfloorpage.html">About Pelvic Floor Physiotherapy</a></li>
+                <li><a href="./contact.html">Subscribe</a></li>
+            </ul>
+        </nav>
+        <section class="end-function-modal">
+            <ul class="modal-content">
+                <li class="finish-message">Well done on completing your pelvic floor exercises!</li>
+                <li class="next-message">See you for the next round!</li>
+                <li><button class="close-btn">X</button></li>
+                <li class="close-refresh">Close</li>
+            </ul>
+        </section>
+       <section class="timer-app">
+            <p class="seconds-display"><span class="time"></span></p>
+            <div class="timer-bar"></div>
+            <div class="timer-bar-progress"></div>
+        <button class="start-button">Start</button>
+       </section>
+        <aside class="set-timer">
+            <ul class="value-set">
+                <li id="squeeze">Squeeze:</li>
+                <li id="relax">Relax:</li>
+                <li id="repeat">Repeat:</li>
+            </ul>
+            <ul class="lists">
+                <li><input type="text" id="squeeze-number" placeholder="Enter seconds"> <button class="squeeze-btn">Set Squeeze Time</button></li>
+                <li><input type="text" id="relax-number" placeholder="Enter seconds"> <button class="relax-btn">Set Relax Time</button></li>
+                <li><input type ="text" id="rep-number" placeholder="Enter repetition"><button class="repetitions-btn">Set Repetitions</button></li>
+            </ul>
+        </aside>
+        <aside class="reminder">
+            <p class="reminder-content">A reminder the best way to find out whether you complete your pelvic floor exercises appropriate for you is to seek advice from a pelvic floor physiotherapist.</p>
+        </aside>
+        <article class="how-to-use">
+            <h6> How to Use the Online Pelvic Floor Trainer</h6>
+            <p class="aim-of-timer"> This Online Pelvic Floor Trainer was designed to be an easy-to-use tool for you to complete your pelvic floor exercises. Follow the instructions below to start your timer:</p>
+            <p class="step-one">1. Enter the number of seconds you would like to- contract & hold for, relax for, and how many repetitions you are required to do.</p>
+            <p class="step-two">2. Press Start on the timer - contract while you can see the orange, release while you see the green colours. Repeat until the set is complete</p>
+            <p class="step-three">3. Bookmark this page to your browser on your phone, tablet & desktop so you can easily open it to start your exercises again!</p>
+        </article>
+    </main> 
+    <footer>
+        <p class="copyright"> &copy; Copyright 2023. Online Pelvic Floor Trainer.</p>
+    </footer>
+</body>
+</html>
