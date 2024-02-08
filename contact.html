@@ -20,6 +20,10 @@
     </nav>
         <h3>Subscribe to our Newsletter</h3>
         <form id="contactForm" action="https://formsubmit.co/1d19c654fd06086462c79fdcfbc3823d" method="POST">
+        <!-- Honeypot -->
+        <input type="text" name="_honey" style="display: none;">
+        <!-- Disable captcha -->
+        <input type="hidden" name="_captcha" value="false">
         <input type="text" name="name" id="name" placeholder="Enter your name" required>
         <input type="email" name="email" id="email" placeholder="Enter your email" required>
         <textarea type="text" name="enquiry" id="enquiry" placeholder="We value your opinion! Share your thoughts with us to help us improve!"></textarea>
